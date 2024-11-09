@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Accessories</title>
+    <style>
+        /* Reset and basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-image: url('https://files.oaiusercontent.com/file-7Nls4RpPURU5I5fX42lBXyBL?se=2024-11-08T17%3A11%3A55Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dea44339e-26b0-4c3a-a605-216ae35edf5d.webp&sig=WHHyOxEhavBRoeI%2Bt7lCOVKMXX6mq2u1xgjDFOnLIAg%3D');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: opacity 0s;
+            box-shadow: 0 4px 20px rgba(231, 232, 232, 0.3), 0 4px 20px rgba(255, 0, 255, 0.3);
+        }
+
+        /* Navbar styling */
+        nav {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 1em 0;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #dadada;
+        }
+
+        header {
+            text-align: center;
+            padding: 4em 1em;
+            margin: 2em 0;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #dedfdfdf;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.3em;
+            color: #ede7e7;
+            max-width: 700px;
+            margin: 1em auto;
+        }
+
+        .content {
+            max-width: 1200px;
+            width: 100%;
+            padding: 2em;
+        }
+
+        .content h2 {
+            font-size: 2.2em;
+            margin-bottom: 0.5em;
+            color: #ffffff;
+            border-bottom: 2px solid #f40909;
+            display: inline-block;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2em;
+            margin-top: 2em;
+        }
+
+        .product {
+            background-color: #ffffff00;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: opacity 0.3s;
+        }
+
+        .product img:hover {
+            opacity: 0.8;
+        }
+
+        .product-info {
+            padding: 1em;
+            text-align: center;
+        }
+
+        .product a {
+            color: #861212;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            margin: 0.5em 0;
+            transition: color 0.3s;
+        }
+
+        .product a:hover {
+            color: #d22929;
+        }
+
+        /* Image styling for header */
+        header img {
+            width: 50%;
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <img src="https://tse1.mm.bing.net/th?id=OIG4.U3Kg8oUtNbjNUePAGY3S&pid=ImgGn" alt="Gaming Accessories Logo">
+        <p>Elevate your gaming experience with the latest in high-performance accessories.</p>
+    </header>    
+    <div class="content">
+        <h2>Our Products</h2>
+        <p>Explore our premium collection of gaming headsets, keyboards, mice, monitors, and more to enhance your setup.</p>
+        
+        <!-- Product Grid -->
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="https://media.steelseriescdn.com/thumbs/filer_public/e3/c6/e3c65d26-8d7d-410b-bc5b-3ca2e25c66ec/arctis_nova_pro_wl_black_pdp_tile_d_hero.jpg__1320x1320_q100_crop-scale_optimize_subsampling-2.jpg" alt="Gaming Headset">
+                <div class="product-info">
+                    <h3>SteelSeries Arctis Nova Pro Wireless</h3>
+                    <p>High-end wireless gaming headset with surround sound and noise cancellation.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="https://via.placeholder.com/250x150" alt="Gaming Keyboard">
+                <div class="product-info">
+                    <h3>Razer BlackWidow V4 Pro</h3>
+                    <p>Mechanical gaming keyboard with customizable RGB lighting and programmable keys.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="https://dlcdnwebimgs.asus.com/files/media/BCABBC17-8970-4EF2-8DD5-7720E66A593F/v2/img/kv/bg-kv.jpg" alt="Gaming Mouse">
+                <div class="product-info">
+                    <h3>Asus ROG Keris II Ace</h3>
+                    <p>Precision gaming mouse with lightweight design and wireless functionality.</p>
+                    <a href="https://rog.asus.com/us/mice-mouse-pads/mice/wireless/rog-keris-ii-ace/">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product">
+                <img src="https://via.placeholder.com/250x150" alt="Gaming Monitor">
+                <div class="product-info">
+                    <h3>Alienware 32 AW3225QF</h3>
+                    <p>32" gaming monitor with 4K resolution and ultra-fast refresh rate for immersive visuals.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div> <!-- End of product-grid -->
+    </div> <!-- End of content -->
+</body>
+</html>
